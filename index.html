@@ -258,8 +258,10 @@
     g.appendChild(text);
     nodesGroup.appendChild(g);
 
+    // Navigate to desired Course Page
     g.addEventListener('click', () => {
-      alert(`Navigate to ${course.name} course`);
+      const courseId = course.id;
+      window.location.href = `course-pages/${courseId}.html`;
     });
   });
 
