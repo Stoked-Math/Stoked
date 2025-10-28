@@ -5,7 +5,12 @@
 
   // Get course folder name from URL (e.g., "algebra-skills")
   const pathParts = window.location.pathname.split("/");
-  const courseFolder = pathParts[2] || "" || "";
+  const courseFolder = pathParts[2] || "";
+  console.log("pathParts:", pathParts);
+  console.log("courseFolder0:", pathParts[0]);
+  console.log("courseFolder1:", pathParts[1]);
+  console.log("courseFolder2:", pathParts[2]);
+  console.log("wholePath", `/${courseFolder}/courseData.js`);
   if (!courseFolder) return;
 
   // Dynamically load the correct courseData.js file
