@@ -747,3 +747,60 @@ a:focus {
   transform: scale(1.05);
   fill: #111;
 }
+
+
+/* Course Guide Bar Styling*/
+
+.course-guide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+}
+
+.course-box,
+.unit-box,
+.lesson-box {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.course-box {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  border-radius: 20px 20px 0 0;
+}
+
+.unit-box {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.lesson-box {
+  font-family: 'Lexend', sans-serif;
+}
+
+.lesson-box.even {
+  background-color: #ffffff;
+}
+.lesson-box.odd {
+  background-color: #f9fafb;
+}
+
+.course-box:hover,
+.unit-box:hover,
+.lesson-box:hover {
+  filter: brightness(95%);
+}
+
+.course-box.active,
+.unit-box.active,
+.lesson-box.active {
+  background-color: #b0d8ff !important;
+  font-weight: 700;
+  color: #000;
+  border-left: 4px solid #0077ff;
+}
