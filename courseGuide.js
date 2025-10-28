@@ -15,7 +15,7 @@
 
   // Dynamically load the correct courseData.js file
   try {
-    await import(`/course-pages/${courseFolder}/courseData.js`);
+    await import(`/Stoked/course-pages/${courseFolder}/courseData.js`);
   } catch (error) {
     console.error("Could not load courseData.js:", error);
     return;
