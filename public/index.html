@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoked - About Math</title>
+  <link rel="icon" type="image/png" href="IntegralIcon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="min-h-screen bg-white">
+    <header class="sticky top-0 z-50 bg-pink-header border-b-4 border-black" style="font-family: Lexend, sans-serif;">
+      <div class="px-4 md:px-8 py-4 md:py-5 flex items-center justify-between">
+        <!-- Logo and tagline -->
+        <div class="flex flex-col">
+          <div class="flex items-center gap-0">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ffe5b59e02f4c40cf96d0aba6b703eda2%2F07c3f483213c4be4b126289dc0bc1df8?format=webp&width=800"
+              alt="Integral"
+              class="w-6 h-8 md:w-7 md:h-9 object-contain -mr-1 md:-mr-2"
+            />
+            <h1 class="text-lg md:text-2xl font-bold text-black">TOKED</h1>
+          </div>
+          <p class="text-xs md:text-sm text-black italic font-normal pl-6 md:pl-8 -mt-1" style="font-family: 'Cambria Math', serif;">
+            about math
+          </p>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-4">
+          <a href="index.html" class="px-4 py-2 border-2 border-black rounded-lg font-semibold text-black hover:bg-white/50 transition-colors flex items-center gap-2 whitespace-nowrap no-underline">
+            Course Tree
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3 L8 8 L10 8 L7 13 L9 13 L5 19 L19 19 L15 13 L17 13 L14 8 L16 8 Z M11 19 L11 22 L13 22 L13 19"></path></svg>          
+          </a>
+          <a href="common-qs.html" class="px-4 py-2 border-2 border-black rounded-lg font-semibold text-black hover:bg-white/50 transition-colors no-underline">
+            Common Q's  ?
+          </a>
+          <a href="about.html" class="px-4 py-2 border-2 border-black rounded-lg font-semibold text-black hover:bg-white/50 transition-colors flex items-center gap-2 no-underline">
+            About
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </a>
+          <li class="dropdown">
+          <a class="dropbtn px-4 py-2 border-2 border-black rounded-lg font-semibold text-black hover:bg-white/50 transition-colors no-underline">
+            Additional +
+          </a>
+          <ul class="dropdown-content">
+            <li><a href="shout-outs.html">Shout Outs</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </li>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden p-2 border-2 border-black rounded-lg"
+          id="menu-toggle"
+        >
+          <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="hidden border-t-2 border-black bg-pink-header px-4 py-3 md:hidden" id="mobile-menu" style="font-family: Lexend, sans-serif;">
+        <a href="index.html" class="w-full px-4 py-3 border-2 border-black rounded-lg font-semibold text-black transition-colors flex items-center gap-2 justify-center no-underline mb-4">
+          <span>Course Tree</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 3 L8 8 L10 8 L7 13 L9 13 L5 19 L19 19 L15 13 L17 13 L14 8 L16 8 Z M11 19 L11 22 L13 22 L13 19"></path>
+          </svg>
+        </a>
+        <a href="common-qs.html" class="w-full px-4 py-3 border-2 border-black rounded-lg font-semibold text-black transition-colors flex items-center gap-2 justify-center no-underline mb-4">
+          <span>Common Q's  ?</span>
+        </a>
+        <a href="about.html" class="w-full px-4 py-3 border-2 border-black rounded-lg font-semibold text-black transition-colors flex items-center gap-2 justify-center no-underline mb-4">
+          <span>About</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </a>
+        <li class="dropdown" style="list-style: none;">
+          <a href="" class="dropbtn">
+            Additional +
+          </a>
+          <ul class="dropdown-content">
+          <li><a href="shout-outs.html">Shout Outs</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </li>
+      </nav>
+    </header>
+
+<main>
+      <div class="w-full min-h-screen bg-white">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+          <h2 class="text-4xl md:text-6xl font-bold text-black mb-6">
+            Welcome to Stoked
+          </h2>
+          <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-12">
+            
+          </p>
+          
+          <!-- Course Tree Visualization -->
+          <div class="course-tree-container">
+            <svg id="course-tree-svg" width="100%" height="1000" viewBox="0 0 800 1000">
+              <!-- Connection Lines -->
+              <g id="connections" stroke="#000" stroke-width="2" fill="none"></g>
+              
+              <!-- Course Nodes -->
+              <g id="nodes"></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  // =============================
+  // Math Course Tree Data (adjusted positions)
+  // =============================
+  const courses = [
+    { id: 'algebra-skills', name: 'Algebra Skills', x: 370, y: 50, color: '#b3e0ffff' },
+    { id: 'geometry', name: 'Geometry', x: 270, y: 140, color: '#ffb880ff' },
+    { id: 'function-families', name: 'Function Families', x: 470, y: 140, color: '#fff8b3ff' },
+    { id: 'trigonometry', name: 'Trigonometry', x: 365, y: 240, color: '#b3ffccff' },
+    { id: 'prob-stats', name: 'Basic Probability, Statistics, and Combinatorics', x: 680, y: 190, color: '#ffb3b3ff' },
+    { id: 'sequences-series', name: 'Sequences and Series', x: 710, y: 320, color: '#ffb3b3ff' },
+    { id: 'curves-coords', name: 'Curves and Coordinates', x: 535, y: 310, color: '#e6ccffff' },
+    { id: 'set-theory', name: 'Set Theory and Logic', x: 160, y: 340, color: '#ffcce6ff' },
+    { id: 'calculus-1', name: 'Calculus 1', x: 365, y: 350, color: '#b3e0ffff' },
+    { id: 'calculus-2', name: 'Calculus 2', x: 490, y: 440, color: '#b3ffccff' },
+    { id: 'linear-algebra', name: 'Linear Algebra', x: 300, y: 490, color: '#b3e0ffff' },
+    { id: 'multivariable', name: 'Multivariable Calculus', x: 560, y: 530, color: '#ffb3b3ff' },
+    { id: 'ode', name: 'Ordinary Differential Equations', x: 660, y: 630, color: '#fff8b3ff' },
+    { id: 'pde', name: 'Partial Differential Equations', x: 660, y: 740, color: '#ffcce6ff' },
+    { id: 'higher-geometry', name: 'Higher Geometry', x: 140, y: 610, color: '#ffb880ff' },
+    { id: 'algebra-1', name: 'Abstract Algebra 1', x: 240, y: 690, color: '#ffb3b3ff' },
+    { id: 'real-analysis-1', name: 'Real Analysis 1', x: 400, y: 690, color: '#fff8b3ff' },
+    { id: 'algebra-2', name: 'Abstract Algebra 2', x: 170, y: 820, color: '#e6ccffff' },
+    { id: 'complex-analysis', name: 'Complex Analysis', x: 330, y: 780, color: '#b3e0ffff' },
+    { id: 'real-analysis-2', name: 'Real Analysis 2', x: 490, y: 800, color: '#b3ffccff' },
+    { id: 'geometry-topology', name: 'Geometry and Topology', x: 340, y: 900, color: '#b3ffccff' }
+  ];
+
+  const connections = [
+    ['algebra-skills', 'geometry'],
+    ['algebra-skills', 'function-families'],
+    ['geometry', 'trigonometry'],
+    ['function-families', 'trigonometry'],
+    ['function-families', 'prob-stats'],
+    ['function-families', 'sequences-series'],
+    ['trigonometry', 'curves-coords'],
+    ['geometry', 'set-theory'],
+    ['trigonometry', 'calculus-1'],
+    ['curves-coords', 'calculus-2'],
+    ['sequences-series', 'calculus-2'],
+    ['calculus-1', 'calculus-2'],
+    ['set-theory', 'linear-algebra'],
+    ['curves-coords', 'linear-algebra'],
+    ['calculus-2', 'multivariable'],
+    ['multivariable', 'ode'],
+    ['ode', 'pde'],
+    ['linear-algebra', 'higher-geometry'],
+    ['linear-algebra', 'algebra-1'],
+    ['linear-algebra', 'real-analysis-1'],
+    ['multivariable', 'real-analysis-1'],
+    ['algebra-1', 'algebra-2'],
+    ['real-analysis-1', 'complex-analysis'],
+    ['real-analysis-1', 'real-analysis-2'],
+    ['algebra-2', 'geometry-topology'],
+    ['real-analysis-2', 'geometry-topology']
+  ];
+
+  // =============================
+  // Animation Setup
+  // =============================
+  const nodePositions = new Map();
+  const nodeVelocities = new Map();
+
+  courses.forEach(course => {
+    nodePositions.set(course.id, { x: course.x, y: course.y });
+    nodeVelocities.set(course.id, {
+      x: 0,
+      y: 0
+    });
+  });
+
+  const nodesGroup = document.getElementById('nodes');
+  const connectionsGroup = document.getElementById('connections');
+
+  // =============================
+  // Draw Connections
+  // =============================
+  connections.forEach(([from, to]) => {
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('data-from', from);
+    line.setAttribute('data-to', to);
+    line.setAttribute('stroke-linecap', 'round');
+    connectionsGroup.appendChild(line);
+  });
+
+  // =============================
+  // Draw Course Nodes
+  // =============================
+  courses.forEach(course => {
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    g.setAttribute('data-course', course.id);
+    g.style.cursor = 'pointer';
+    g.classList.add('course-node');
+
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('width', '140');
+    rect.setAttribute('height', '60');
+    rect.setAttribute('rx', '10');
+    rect.setAttribute('fill', course.color);
+    rect.setAttribute('stroke', '#000');
+    rect.setAttribute('stroke-width', '2');
+
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('dominant-baseline', 'middle');
+    text.setAttribute('font-size', '12');
+    text.setAttribute('font-weight', '600');
+    text.setAttribute('fill', '#000');
+    text.style.pointerEvents = 'none';
+    text.style.userSelect = 'none';
+
+    const words = course.name.split(' ');
+    if (words.length > 2) {
+      const lines = [];
+      let currentLine = '';
+      words.forEach(word => {
+        if ((currentLine + word).length > 15) {
+          if (currentLine) lines.push(currentLine.trim());
+          currentLine = word + ' ';
+        } else {
+          currentLine += word + ' ';
+        }
+      });
+      if (currentLine) lines.push(currentLine.trim());
+
+      const lineHeight = 14;
+      const startY = 30 - ((lines.length - 1) * lineHeight) / 2;
+      lines.forEach((line, i) => {
+        const tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+        tspan.setAttribute('x', '70');
+        tspan.setAttribute('y', startY + i * lineHeight);
+        tspan.textContent = line;
+        text.appendChild(tspan);
+      });
+    } else {
+      text.setAttribute('x', '70');
+      text.setAttribute('y', '30');
+      text.textContent = course.name;
+    }
+
+    g.appendChild(rect);
+    g.appendChild(text);
+    nodesGroup.appendChild(g);
+
+    g.addEventListener('click', () => {
+      alert(`Navigate to ${course.name} course`);
+    });
+  });
+
+
+// Optional per-node width adjustments for long titles
+const customWidths = {
+  'prob-stats': 160,
+  'geometry-topology': 140,
+  'set-theory': 140,
+  'multivariable': 160
+};
+
+courses.forEach(course => {
+  const node = document.querySelector(`[data-course="${course.id}"] rect`);
+  const textEl = document.querySelector(`[data-course="${course.id}"] text`);
+  const width = customWidths[course.id];
+  if (node && width) {
+    node.setAttribute('width', width);
+    const newCenterX = width / 2;
+    textEl.querySelectorAll('tspan').forEach(tspan => tspan.setAttribute('x', newCenterX));
+    textEl.setAttribute('x', newCenterX);
+  }
+});
+
+// ✅ Optional per-node height adjustments for multi-line text
+const customHeights = {
+  'prob-stats': 75,
+  'geometry-topology': 70,
+  'sequences-series': 65,
+  'real-analysis-1': 65
+};
+
+courses.forEach(course => {
+  const node = document.querySelector(`[data-course="${course.id}"] rect`);
+  const textEl = document.querySelector(`[data-course="${course.id}"] text`);
+  const height = customHeights[course.id];
+  if (node && height) {
+    node.setAttribute('height', height);
+
+    // Vertically re-center the text
+    const newCenterY = height / 2;
+    // Update single-line labels
+    textEl.setAttribute('y', newCenterY);
+
+    // Update multi-line labels (tspans)
+    const tspans = textEl.querySelectorAll('tspan');
+    if (tspans.length > 0) {
+      const lineHeight = 14;
+      const startY = newCenterY - ((tspans.length - 1) * lineHeight) / 2;
+      tspans.forEach((tspan, i) => {
+        tspan.setAttribute('y', startY + i * lineHeight);
+      });
+    }
+  }
+});
+
+courses.forEach(course => {
+  const node = document.querySelector(`[data-course="${course.id}"] rect`);
+  const textEl = document.querySelector(`[data-course="${course.id}"] text`);
+  const width = customWidths[course.id];
+  if (node && width) {
+    node.setAttribute('width', width);
+    // Recenter the text horizontally
+    const newCenter = width / 2;
+    textEl.querySelectorAll('tspan').forEach(tspan => tspan.setAttribute('x', newCenter));
+    textEl.setAttribute('x', newCenter);
+  }
+});
+
+  // =============================
+  // Gentle Ocean-Wave Drift Animation
+  // =============================
+  const springStrength = 0.010;
+  const damping = 0.97;
+  let time = 0;
+
+  function animate() {
+    time += 0.005; // slower phase progression for smooth oscillation
+    const wave = Math.sin(time) * 0.4 + Math.sin(time * 0.7) * 0.4; // compound wave for organic motion
+
+    courses.forEach(course => {
+      const pos = nodePositions.get(course.id);
+      const vel = nodeVelocities.get(course.id);
+
+      // soft, wave-modulated nudges
+      vel.x += Math.sin(time + course.x * 0.01) * 0.07 * wave;
+      vel.y += Math.cos(time + course.y * 0.01) * 0.06 * wave;
+
+      // spring back
+      vel.x += (course.x - pos.x) * springStrength;
+      vel.y += (course.y - pos.y) * springStrength;
+
+      // damping for smoothness
+      vel.x *= damping;
+      vel.y *= damping;
+
+      pos.x += vel.x;
+      pos.y += vel.y;
+
+      const node = document.querySelector(`[data-course="${course.id}"]`);
+      if (node) {
+        node.setAttribute('transform', `translate(${pos.x - 70}, ${pos.y - 30})`);
+      }
+    });
+
+    // update connection lines
+    connections.forEach(([from, to]) => {
+      const fromPos = nodePositions.get(from);
+      const toPos = nodePositions.get(to);
+      const line = document.querySelector(`[data-from="${from}"][data-to="${to}"]`);
+      if (line && fromPos && toPos) {
+        line.setAttribute('x1', fromPos.x);
+        line.setAttribute('y1', fromPos.y);
+        line.setAttribute('x2', toPos.x);
+        line.setAttribute('y2', toPos.y);
+      }
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+
+</body>
+</html>
