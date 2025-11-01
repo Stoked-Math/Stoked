@@ -1,5 +1,5 @@
 // /course-pages/algebra-skills/courseData.js
-const courseData = {
+export const courseData = {
   title: "Algebra Skills",
   titleColor: "#c7e2fa",
 
