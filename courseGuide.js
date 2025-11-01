@@ -16,6 +16,7 @@
   // Dynamically load the correct courseData.js file
   try {
   const { courseData } = await import(`/Stoked/course-pages/${courseFolder}/courseData.js`);
+  console.log("Loaded courseData:", courseData);
   } catch (error) {
     console.error("Could not load courseData.js:", error);
     return;
