@@ -36,7 +36,7 @@
   const guideHTML = `
     <div class="course-box ${currentPath.includes(courseFolder) && currentPath.endsWith(`${courseFolder}.html`) ? "active" : ""}"
          style="background:${courseData.titleColor}"
-         data-url="/course-pages/${courseFolder}/${courseFolder}.html">
+         data-url="/Stoked/course-pages/${courseFolder}/${courseFolder}.html">
       ${courseData.title}
     </div>
     ${courseData.units
@@ -44,7 +44,7 @@
         if (!unit.name) return "";
         const unitSlug = formatName(unit.name);
         const isUnitActive = currentPath.includes(unitSlug);
-        const unitUrl = `/course-pages/${courseFolder}/${unitSlug}.html`;
+        const unitUrl = `/Stoked/course-pages/${courseFolder}/${unitSlug}.html`;
 
         return `
           <div class="unit-box ${isUnitActive ? "active" : ""}"
@@ -55,7 +55,7 @@
           ${unit.lessons
             .map((lesson, index) => {
               const lessonSlug = formatName(lesson);
-              const lessonUrl = `/course-pages/${courseFolder}/${lessonSlug}.html`;
+              const lessonUrl = `/Stoked/course-pages/${courseFolder}/${lessonSlug}.html`;
               const isLessonActive = currentPath.includes(lessonSlug);
               return `
                 <div class="lesson-box ${index % 2 === 0 ? "even" : "odd"} ${isLessonActive ? "active" : ""}"
