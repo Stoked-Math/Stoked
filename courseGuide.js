@@ -22,7 +22,7 @@
     return;
   }
 
-  if (typeof courseData === "undefined") return;
+ // if (typeof courseData === "undefined") return;
 
   function formatName(name) {
     return name
