@@ -757,6 +757,8 @@ a:focus {
   border-radius: 20px;
   overflow: hidden;
   width: 250px;
+  flex-shrink: 0;
+  margin: 10px;
 }
 
 .course-box,
@@ -803,4 +805,8 @@ a:focus {
   font-weight: 700;
   color: #000;
   border-left: 4px solid #0077ff;
+}
+
+.course-content {
+  flex: 1;                 /* Take up remaining horizontal space */
 }
