@@ -13,17 +13,11 @@
   console.log("wholePath", `/${courseFolder}/courseData.js`);
   if (!courseFolder) return;
 
-  // Dynamically load the correct courseData.js file
-  try {
+  // ✅ Import the module and destructure `courseData` properly
   const { courseData } = await import(`/Stoked/course-pages/${courseFolder}/courseData.js`);
   console.log("Loaded courseData:", courseData);
-  } catch (error) {
-    console.error("Could not load courseData.js:", error);
-    return;
-  }
 
- // if (typeof courseData === "undefined") return;
-
+  // Format helper
   function formatName(name) {
     return name
       .toLowerCase()
@@ -34,10 +28,16 @@
 
   const currentPath = window.location.pathname.toLowerCase();
 
+  // ✅ Build Course Guide HTML using imported `courseData`
   const guideHTML = `
-    <div class="course-box ${currentPath.includes(courseFolder) && currentPath.endsWith(`${courseFolder}.html`) ? "active" : ""}"
-         style="background:${courseData.titleColor}"
-         data-url="/Stoked/course-pages/${courseFolder}/${courseFolder}.html">
+    <div class="course-box ${
+      currentPath.includes(courseFolder) &&
+      currentPath.endsWith(`${courseFolder}.html`)
+        ? "active"
+        : ""
+    }"
+      style="background:${courseData.titleColor}"
+      data-url="/Stoked/course-pages/${courseFolder}/${courseFolder}.html">
       ${courseData.title}
     </div>
     ${courseData.units
@@ -59,8 +59,9 @@
               const lessonUrl = `/Stoked/course-pages/${courseFolder}/${lessonSlug}.html`;
               const isLessonActive = currentPath.includes(lessonSlug);
               return `
-                <div class="lesson-box ${index % 2 === 0 ? "even" : "odd"} ${isLessonActive ? "active" : ""}"
-                     data-url="${lessonUrl}">
+                <div class="lesson-box ${index % 2 === 0 ? "even" : "odd"} ${
+                isLessonActive ? "active" : ""
+              }" data-url="${lessonUrl}">
                   ${lesson}
                 </div>`;
             })
@@ -70,9 +71,10 @@
       .join("")}
   `;
 
+  // ✅ Inject it into the page
   container.innerHTML = guideHTML;
 
-  // Navigation
+  // ✅ Add navigation
   document
     .querySelectorAll(".lesson-box, .unit-box, .course-box")
     .forEach((box) => {
