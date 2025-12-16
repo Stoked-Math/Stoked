@@ -6,7 +6,7 @@ export const courseData = {
   units: [
     {
       name: "Properties of Operations",
-      color: "#e4f2fd",
+      color: "#f9fafb",
       lessons: [
         "Order of Operations",
         "How to Live with Fractions",
@@ -15,12 +15,17 @@ export const courseData = {
         "Plotting Points",
         "Proportional Reasoning",
         "How to Manipulate Equations",
+        "How to Solve Equations",
+        "Inequalities",
+        "Absolute Value",
+        "Square Root",
+        "Nth Root",
+        "Exponent Rules",
+        "Functions",
+        "Lines",
+        "Systems of Linear Equations",
+        "Inverse Functions",
       ],
-    },
-    {
-      name: "How to Solve Equations",
-      color: "#e4f2fd",
-      lessons: ["Inequalities", "Absolute Value", "Square Root"],
     },
   ],
 };
